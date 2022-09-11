@@ -43,7 +43,7 @@ public class StudentController {
                     return repo.save(student);
                 })
                 .orElseGet(() -> {
-                    newStudent.setStudent_id(Math.toIntExact(id));
+                    newStudent.setStudent_id((long) Math.toIntExact(id));
                     return repo.save(newStudent);
                 });
     }

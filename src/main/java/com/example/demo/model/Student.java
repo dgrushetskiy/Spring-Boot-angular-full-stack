@@ -8,7 +8,7 @@ public class Student {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int student_id;
+    private Long student_id;
     private String name;
     private String grade;
 
@@ -20,11 +20,11 @@ public class Student {
         this.grade = grade;
     }
 
-    public int getStudent_id() {
+    public Long getStudent_id() {
         return student_id;
     }
 
-    public void setStudent_id(int student_id) {
+    public void setStudent_id(Long student_id) {
         this.student_id = student_id;
     }
 

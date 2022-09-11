@@ -1,0 +1,20 @@
+<div style="padding: 13px;">
+    <mat-spinner *ngIf="!students"></mat-spinner>
+
+    <mat-card *ngFor="let student of students" style="margin-top:10px;">
+        <mat-card-content>
+            <p>
+                Name: {{student.name}}
+            </p>
+            <p>
+                Grade: {{student.grade}}
+            </p>   
+            <p>
+                Student Id: {{student.student_id}}
+            </p>                      
+        </mat-card-content>
+        <mat-card-actions>
+      <button class="btn btn-warning" (click)="deleteStudent(student.student_id)"> Remove student</button>
+    </mat-card-actions>
+    </mat-card>
+</div>

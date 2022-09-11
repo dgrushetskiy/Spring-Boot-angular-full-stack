@@ -1,0 +1,37 @@
+<!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form>
+                <br>
+                <fieldset>
+                    
+                    <legend class="text-center">Add Student</legend>
+
+                    <div class="form-group">
+                        <label for="Name"><span class="req">* </span> Student Name:  </label>
+                        <input required type="text" [(ngModel)]="student.name" name="name" id="name"
+                            class="form-control phone" maxlength="28" placeholder="Enter full name..." />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="firstname"><span class="req">* </span> Grade: </label>
+                        <input class="form-control" type="text" [(ngModel)]="student.grade" name="grade" id="txt" required
+                            placeholder="Enter student grade.." />
+                        <div id="errFirst"></div>
+                    </div>
+
+                     <div class="form-group">
+                        <input class="btn btn-success" type="submit" name="submit_reg" value="Register" (click)="registerNow()">
+                    </div>
+                </fieldset>
+            </form><!-- ends register form -->
+            <!-- second for to fiter user-->
+        </div><!-- ends col-6 -->
+
+    </div>
+</div>
+
